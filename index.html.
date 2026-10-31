@@ -1,1 +1,91 @@
-index.html.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXA ELITE AI</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080808;color:#f5f0e5;font-family:Arial,sans-serif}
+header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #30250e}
+.logo{color:#d6ad55;font-size:23px;font-weight:bold;letter-spacing:3px}
+nav a{color:#ddd;text-decoration:none;margin-left:18px;font-size:13px}
+.hero{text-align:center;padding:90px 20px 70px}
+.tag{color:#d6ad55;letter-spacing:4px;font-size:12px}
+h1{font-size:clamp(38px,8vw,68px);margin:22px 0 12px}
+h1 span{color:#d6ad55}
+.hero p{color:#aaa;line-height:1.7;max-width:550px;margin:0 auto 30px}
+.btn{display:inline-block;background:#d6ad55;color:#090909;padding:14px 25px;border-radius:4px;text-decoration:none;font-weight:bold}
+section{padding:55px 8%;text-align:center}
+h2{color:#d6ad55;font-size:29px}
+.cards{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.card{background:#111;border:1px solid #4a391b;padding:28px 22px;border-radius:8px;width:260px}
+.card h3{color:#d6ad55}
+.price{font-size:32px;margin:18px 0}
+.card p{color:#aaa;line-height:1.6;font-size:14px}
+.chat{max-width:600px;margin:25px auto;background:#111;border:1px solid #4a391b;padding:22px;border-radius:8px}
+.chat input{width:100%;padding:14px;background:#080808;border:1px solid #55421e;color:white;margin:12px 0}
+.chat button{padding:12px 20px;background:#d6ad55;border:0;font-weight:bold;cursor:pointer}
+#reply{color:#ddd;line-height:1.6;margin-top:18px}
+footer{text-align:center;padding:30px;color:#777;border-top:1px solid #30250e;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">NEXA ELITE AI</div>
+<nav><a href="#planes">Planes</a><a href="#asistente">IA</a></nav>
+</header>
+
+<div class="hero">
+<div class="tag">INTELIGENCIA ARTIFICIAL</div>
+<h1>El futuro tiene un nombre:<br><span>NEXA ELITE</span></h1>
+<p>Una nueva experiencia de inteligencia artificial, diseñada para impulsar ideas, creatividad y productividad.</p>
+<a class="btn" href="#asistente">DESCUBRIR NEXA</a>
+</div>
+
+<section id="asistente">
+<h2>Conoce NEXA AI</h2>
+<p style="color:#aaa">Tu espacio para explorar nuevas ideas.</p>
+<div class="chat">
+<strong style="color:#d6ad55">NEXA ASSISTANT</strong>
+<input id="question" placeholder="Escribe tu pregunta...">
+<button onclick="respond()">Enviar mensaje</button>
+<div id="reply">Bienvenido a NEXA. Esta es una demostración visual.</div>
+</div>
+</section>
+
+<section id="planes">
+<h2>Acceso exclusivo</h2>
+<div class="cards">
+<div class="card">
+<h3>ACCESS</h3>
+<div class="price">Gratis</div>
+<p>Acceso básico por invitación.</p>
+</div>
+<div class="card">
+<h3>PRO</h3>
+<div class="price">$20</div>
+<p>Experiencia premium y herramientas avanzadas.</p>
+</div>
+<div class="card">
+<h3>TURBO</h3>
+<div class="price">$50</div>
+<p>La experiencia más completa de NEXA.</p>
+</div>
+</div>
+<p style="color:#777;font-size:12px">Planes conceptuales. Las suscripciones aún no están habilitadas.</p>
+</section>
+
+<footer>© 2026 NEXA ELITE AI · Todos los derechos reservados</footer>
+
+<script>
+function respond(){
+const q=document.getElementById("question").value.trim();
+const r=document.getElementById("reply");
+if(!q){r.textContent="Escribe una pregunta primero.";return;}
+r.textContent="Esta es una demostración de NEXA. La conexión con inteligencia artificial estará disponible en una próxima versión.";
+}
+</script>
+</body>
+</html>
